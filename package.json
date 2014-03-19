@@ -1,0 +1,36 @@
+{
+  "name": "phant-storage-mongodb",
+  "version": "0.0.1",
+  "main": "lib/phant-storage-mongodb.js",
+  "description": "mongodb storage for phant",
+  "homepage": "https://github.com/sparkfun/phant-storage-mongodb",
+  "bugs": "https://github.com/sparkfun/phant-storage-mongodb/issues",
+  "author": {
+    "name": "Todd Treece",
+    "email": "todd@uniontownlabs.org",
+    "url": "http://uniontownlabs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sparkfun/phant-storage-mongodb"
+  },
+  "licenses": [
+    {
+      "type": "GPL v3"
+    }
+  ],
+  "dependencies": {
+    "mongoose": "^3.8.8"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.7.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.0",
+    "load-grunt-tasks": "~0.2.0",
+    "time-grunt": "~0.2.0",
+    "jshint-stylish": "~0.1.3"
+  },
+  "scripts": {
+    "test": "grunt"
+  }
+}
