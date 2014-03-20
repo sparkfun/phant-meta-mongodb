@@ -4,7 +4,6 @@ var phantStorageMongodb = require('../lib/phant-storage-mongodb.js');
 
 exports.phantStorageMongodb = {
   setUp: function(done) {
-    // setup here
     done();
   },
   'no args': function(test) {

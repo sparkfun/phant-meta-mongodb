@@ -1,6 +1,6 @@
 {
   "name": "phant-storage-mongodb",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "lib/phant-storage-mongodb.js",
   "description": "mongodb storage for phant",
   "homepage": "https://github.com/sparkfun/phant-storage-mongodb",
@@ -20,7 +20,8 @@
     }
   ],
   "dependencies": {
-    "mongoose": "^3.8.8"
+    "mongoose": "^3.8.8",
+    "mongoose-error-helper": "0.0.2"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.7.0",
