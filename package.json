@@ -1,6 +1,6 @@
 {
   "name": "phant-storage-mongodb",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/phant-storage-mongodb.js",
   "description": "mongodb storage for phant",
   "homepage": "https://github.com/sparkfun/phant-storage-mongodb",

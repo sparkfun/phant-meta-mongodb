@@ -1,6 +1,6 @@
 # phant-storage-mongodb [![Build Status](https://secure.travis-ci.org/sparkfun/phant-storage-mongodb.png?branch=master)](http://travis-ci.org/sparkfun/phant-storage-mongodb)
 
-key encryption module for phant
+mongodb storage for phant metadata and streams
 
 ## Getting Started
 Install the module with: `npm install phant-storage-mongodb`
