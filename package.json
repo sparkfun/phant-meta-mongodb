@@ -1,10 +1,10 @@
 {
-  "name": "phant-storage-mongodb",
-  "version": "0.0.10",
-  "main": "lib/phant-storage-mongodb.js",
+  "name": "phant-meta-mongodb",
+  "version": "0.0.1",
+  "main": "lib/phant-meta-mongodb.js",
   "description": "mongodb storage for phant",
-  "homepage": "https://github.com/sparkfun/phant-storage-mongodb",
-  "bugs": "https://github.com/sparkfun/phant-storage-mongodb/issues",
+  "homepage": "https://github.com/sparkfun/phant-meta-mongodb",
+  "bugs": "https://github.com/sparkfun/phant-meta-mongodb/issues",
   "author": {
     "name": "Todd Treece",
     "email": "todd@uniontownlabs.org",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/sparkfun/phant-storage-mongodb"
+    "url": "git://github.com/sparkfun/phant-meta-mongodb"
   },
   "licenses": [
     {
