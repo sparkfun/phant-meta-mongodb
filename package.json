@@ -1,6 +1,6 @@
 {
   "name": "phant-meta-mongodb",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/phant-meta-mongodb.js",
   "description": "mongodb storage for phant",
   "homepage": "https://github.com/sparkfun/phant-meta-mongodb",
