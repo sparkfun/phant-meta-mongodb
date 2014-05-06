@@ -12,9 +12,7 @@ exports.phantMeta = {
       description: 'testing',
       fields: ['one', 'two', 'three'],
       tags: ['test'],
-      hidden: false,
-      flagged: false,
-      last_push: 0
+      hidden: false
     };
 
     meta.create(data, function(err, stream) {
