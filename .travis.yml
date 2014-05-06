@@ -4,6 +4,7 @@ services:
 node_js:
   - '0.10'
 before_script:
+  - sleep 15
   - npm install -g grunt-cli
 notifications:
   email:
