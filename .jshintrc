@@ -3,11 +3,11 @@
   "eqeqeq": true,
   "immed": true,
   "latedef": "nofunc",
-  "newcap": true,
+  "newcap": false,
   "noarg": true,
   "sub": true,
   "undef": true,
-  "unused": true,
+  "unused": "vars",
   "boss": true,
   "eqnull": true,
   "node": true
