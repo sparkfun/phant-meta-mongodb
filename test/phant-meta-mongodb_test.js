@@ -87,6 +87,21 @@ exports.phantMeta = {
 
   },
 
+  'all': function(test) {
+
+    test.expect(2);
+
+    meta.all(function(err, streams) {
+
+      var limit = streams.length;
+
+      test.ok(streams.length > 0, 'should return some items');
+      test.done();
+
+    });
+
+  },
+
   'list': function(test) {
 
     test.expect(2);
