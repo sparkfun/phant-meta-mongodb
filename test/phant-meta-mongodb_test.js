@@ -30,7 +30,7 @@ exports.phantMeta = {
 
   tearDown: function(done) {
 
-    meta.remove(this.stream.id, function(err, status) {
+    meta.delete(this.stream.id, function(err) {
       done();
     }.bind(this));
 
@@ -59,7 +59,7 @@ exports.phantMeta = {
 
     var old = this.stream.last_push;
 
-    meta.touch(this.stream.id, function(err, status) {
+    meta.touch(this.stream.id, function(err) {
 
       meta.get(this.stream.id, function(err, stream) {
         test.ok(old < stream.last_push, 'should set last_push to now');
@@ -67,36 +67,6 @@ exports.phantMeta = {
       }.bind(this));
 
     }.bind(this));
-
-  },
-
-  'flag': function(test) {
-
-    test.expect(2);
-
-    test.equal(this.stream.flagged, false, 'should not be flagged at creation');
-
-    meta.flag(this.stream.id, function(err, status) {
-
-      meta.get(this.stream.id, function(err, stream) {
-        test.ok(stream.flagged, 'should now be flagged');
-        test.done();
-      }.bind(this));
-
-    }.bind(this));
-
-  },
-
-  'all': function(test) {
-
-    test.expect(1);
-
-    meta.all(function(err, streams) {
-
-      test.ok(streams.length > 0, 'should return some items');
-      test.done();
-
-    });
 
   },
 
@@ -113,19 +83,19 @@ exports.phantMeta = {
       meta.list(function(err, streams) {
         test.equal(streams.length, limit -1, 'should limit the list');
         test.done();
-      }, 0, limit - 1);
+      }, {}, 0, limit - 1);
 
     });
 
   },
 
-  'remove': function(test) {
+  'delete': function(test) {
 
     test.expect(2);
 
-    meta.remove(this.stream.id, function(err, status) {
+    meta.delete(this.stream.id, function(err) {
 
-      test.ok(status, 'should be ok');
+      test.ok(!err, 'should not err');
 
       meta.get(this.stream.id, function(err, stream) {
 
