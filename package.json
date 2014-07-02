@@ -20,6 +20,7 @@
     }
   ],
   "dependencies": {
+    "lodash": "^2.4.1",
     "mongoose": "^3.8.8"
   },
   "devDependencies": {
